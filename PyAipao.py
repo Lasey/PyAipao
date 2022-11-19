@@ -82,8 +82,8 @@ class Aipaoer(object):
 
     def upload_record(self):
         my_distance = self.distance + randint(0, 1)
-        my_step = randint(950, 1250)
-        my_speed = round(uniform(self.minSpeed + 0.3, self.maxSpeed - 1.5), 2)
+        my_step = randint(1750, 2000)
+        my_speed = round(uniform(self.minSpeed + 0.4, self.maxSpeed - 1.4), 2)
         my_costTime = int(my_distance // my_speed)
         myParams = {
             "token": self.token,
